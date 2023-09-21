@@ -20,11 +20,11 @@ for (i = 1; i <= 100; i++){
 
 //Дане ціле число. З'ясувати, чи є воно простим (простим називається число, більше 1, які не мають інших дільників крім 1 і себе).
 function isPrime(number){
-    if (number <+ 1){
+    if (number <= 1){
         return false;
     }
     for (let i = 2; i <= Math.sqrt(number); i++){
-        if (number % i === 0){
+        if (number % i === 0){  
             return false;
         }
     }
